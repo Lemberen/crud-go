@@ -1,0 +1,53 @@
+<form class="form" [formGroup]="formGroup">
+  <mat-form-field appearance="fill">
+    <mat-label>Id</mat-label>
+    <input matInput type="number" [value]="data.Id" formControlName="Id">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput [value]="data.Title" formControlName="Title">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Author</mat-label>
+    <input matInput [value]="data.Author" formControlName="Author">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Edition</mat-label>
+    <input matInput type="number" [value]="data.Edition" formControlName="Edition">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Year</mat-label>
+    <input matInput type="number" [value]="data.Year" formControlName="Year">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Publisher</mat-label>
+    <input matInput [value]="data.Publisher" formControlName="Publisher">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Language</mat-label>
+    <input matInput [value]="data.Language" formControlName="Language">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Pages</mat-label>
+    <input matInput type="number" [value]="data.Pages" formControlName="Pages">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Isbn</mat-label>
+    <input matInput [value]="data.Isbn" formControlName="Isbn">
+  </mat-form-field>
+
+  <div class="btn-container">
+    <button mat-flat-button color="primary" class="cancel" (click)="onNoClick()">Cancel</button>
+    <button mat-flat-button color="primary" [mat-dialog-close]="formGroup.value">Confirm</button>
+  </div>
+</form>
+
+

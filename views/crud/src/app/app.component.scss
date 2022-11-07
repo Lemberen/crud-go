@@ -1,0 +1,25 @@
+.container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 50px;
+  margin-top: 50px;
+  align-self: flex-end;
+
+  &.options-btn{
+    margin-top: 0px;
+  }
+}
+
+svg {
+  width: 20px;
+}
+
+table{
+  width: 100%;
+  margin-top: 20px;
+}
